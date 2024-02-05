@@ -1,0 +1,25 @@
+{
+    "name": "Ilkhom",
+    "profession": "Software Engineer",
+    "age" :24,
+    "residence": "S.Korea",
+    "adress": "S.Korea, Busan",
+    "language": ["uzbek", "Korean", "Emglish"],
+    "skills": ["HTML", "CSS", "JS", "NodeJS", "Phyton"],
+    "extra_skills": ["bootstrap", "materialize", "Styling, Sass", "Django", "Falsk", "Git knowledge" ],
+    "work_place": "IT Company",
+    "service_desc": " Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker",
+    "about_me": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "city": "Denau",
+    "title": ["Flower", "Seedling", "Garden", "Old", "New"],
+    "flower_disc": ["What is a flower?", "What is a seedling?", "Who is Gardner?"],
+    "flower_name" : [ "Tulip", "Dalfodil", "Poppy", "Sunflower", "Bluebell", "Rose", "Snowdrop", "Cherry", "Blossom"],
+    "flower_price": ["15$", "25$", "12$"," 20$", "35$", "30$", "22$", "19$", "9$"],
+    "famous_words": ["World is beautiful with Flowers"],
+    "famous_name": ["Stive jobs"]
+
+
+
+
+
+}
