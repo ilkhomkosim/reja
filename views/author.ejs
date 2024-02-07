@@ -1,1 +1,359 @@
-<div>Hello world fuck the overthinkers</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="frame">
+        <div class="main_frame">
+            <div class="left_frame">
+                <div class="left_1">
+                    <div class="left_1-1">
+                        <img src="images/uilyam.jpg" width="156.16px" height="135.05px" border-radius="50%"  alt="Uilyam's picture">
+                    </div>
+                    <div class="left_1-2"><%=user.name%></div>
+                    <div class="left_1-3"><%=user.profession%></div>
+                    <div class="left-icons">
+                        <a class="link_href" href="#">
+                            <div class="icon">
+                                <img src="icon/Instagram.svg" class="icon-1" alt="Instagram_page">
+                            </div>
+                        </a>
+                        <a class="link_href" href="#">
+                            <div class="icon">
+                                <img src="icon/Twitter.svg" class="icon-1" alt="Twitter_page">
+                            </div>
+                        </a>
+                        <a class="link_href" href="#">
+                            <div class="icon">
+                                <img src="icon/Linkeding.svg" class="icon-1" alt="Linkeding_page">
+                            </div>
+                        </a>
+                        <a class="link_href" href="#">
+                            <div class="icon">
+                                <img src="icon/Youtube.svg" class="icon-1" alt="YouTube_page">
+                            </div>
+                        </a>
+                        <a class="link_href" href="#">
+                            <div class="icon">
+                                <img src="icon/Dribbble.svg" class="icon-1" alt="Facebook_page">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="marginer"></div>
+                <div class="left_2">
+                    
+                    <div class="yosh">
+                        <span>Age</span>
+                        <div class="age">
+                            <%=user.age%>
+                        </div>
+                    </div>
+
+                    <div class="yosh">
+                        <span>Residence</span>
+                        <div class="residence">
+                    <%=user.residence%>
+                        </div>
+                    </div>
+                    <div class="yosh">
+                        <span>Freelance</span>
+                        <div class="freelance">
+                        <%=user.freelance%>
+                        </div>
+                    </div>
+                    <div class="yosh">
+                        <span>Adress</span>
+                    <div class="adress">
+                        <%=user.adress%>
+                    </div>
+                    </div>
+                </div>
+                <div class="marginer"></div>
+                <div class="left_3">
+                    <div class="education">Languages</div>
+                    <div class="languages">
+                        <div class="learning">
+                            <div class="uzbek">
+                                <%=user.language[0]%>
+                            </div>
+                            <span>100%</span>
+                        </div>
+                        <div class="rectangle">
+                            <img src="images/uzbek.svg" alt="">
+                        </div>
+                        <div class="learning">
+                            <div class="english">
+                                <%=user.language[2]%>
+                            </div>
+                            <span>80%</span>
+                        </div>
+                        <div class="rectangle">
+                            <img src="images/english.svg" alt="">
+                        </div>
+                        <div class="learning">
+                            <div class="korean">
+                                <%=user.language[1]%>
+                            </div>
+                            <span>65%</span>
+                        </div>
+                         <div class="rectangle">
+                            <img src="images/korean.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="marginer"></div>
+                <div class="left_4">
+                    <div class="skills">Skills</div>
+                    <div class="Extra_skills">
+                        <div class="coding">
+                            <div class="uzbek">
+                                <%=user.skills[0]%>
+                            </div>
+                            <span>90%</span>
+                        </div>
+                        <div class="rectangle">
+                            <img src="images/Linehtml.png" alt="">
+                        </div>
+                        <div class="coding">
+                            <div class="english">
+                                <%=user.skills[1]%>
+                            </div>
+                            <span>85%</span>
+                        </div>
+                        <div class="rectangle">
+                            <img src="images/Line (4).png" alt="">
+                        </div>
+                        <div class="coding">
+                            <div class="korean">
+                                <%=user.skills[2]%>
+                            </div>
+                            <span>80%</span>
+                        </div>
+                         <div class="rectangle">
+                            <img src="images/LineJs.png" alt="">
+                        </div>
+                        <div class="coding">
+                            <div class="korean">
+                                <%=user.skills[3]%>
+                            </div>
+                            <span>75%</span>
+                        </div>
+                         <div class="rectangle">
+                            <img src="images/Linephp.png" alt="">
+                        </div>
+                        <div class="coding">
+                            <div class="korean">
+                                <%=user.skills[4]%>
+                            </div>
+                            <span>85%</span>
+                        </div>
+                         <div class="rectangle">
+                            <img src="images/Linewordpress.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="marginer"></div>
+                <div class="left_5">
+                    <div class="extra_skills_1">
+                        <div class="icons">
+                            <img src="icon/resume_figma-Home page- Light mode/Icons,Property 1=Default.png" alt="">
+                        </div>
+                        <div class="bootstrap">
+                            <%=user.extra_skills[0]%>
+                        </div>
+                    </div>
+                    <div class="extra_skills_1">
+                        <div class="icons">
+                            <img src="icon/resume_figma-Home page- Light mode/Icons,Property 1=Default.png" alt="">
+                        </div>
+                        <div class="bootstrap">
+                            <%=user.extra_skills[1]%>
+                        </div>
+                    </div>
+                    <div class="extra_skills_1">
+                        <div class="icons">
+                            <img src="icon/resume_figma-Home page- Light mode/Icons,Property 1=Default.png" alt="">
+                        </div>
+                        <div class="bootstrap">
+                            <%=user.extra_skills[2]%>
+                        </div>
+                    </div>
+                    <div class="extra_skills_1">
+                        <div class="icons">
+                            <img src="icon/resume_figma-Home page- Light mode/Icons,Property 1=Default.png" alt="">
+                        </div>
+                        <div class="bootstrap">
+                            <%=user.extra_skills[3]%>
+                        </div>
+                    </div>
+                </div>
+                <div class="marginer"></div>
+            </div>
+            <div class="midd_frame">
+                <div class="midd_top">
+                    <div class="midd_top_div">
+                        <div class="midd_top_frame">
+                            <div class="ellips12">
+                                <img src="icon/resume_figma-Home page- Light mode/Ellipse 12.svg" alt="">
+                            </div>
+                            <div class="ellips16">
+                                <img src="icon/resume_figma-Home page- Light mode/Ellipse 16.svg" alt="">
+                            </div>
+                            <div class="ellips15">
+                                <img src="icon/resume_figma-Home page- Light mode/Ellipse 15.svg" width="16px" height="15px" alt="">
+                            </div>
+                            <div class="polygon">
+                                <img src="icon/resume_figma-Home page- Light mode/Polygon 1.svg" alt="">
+                            </div>
+                            <div class="rec">
+                                <img src="icon/resume_figma-Home page- Light mode/Rectangle 52.svg" width:="15.93px"
+                                height="15.65px" alt="">
+                            </div>
+                        </div>
+                        <div class="midd_top_main_text">
+                            <div class="title">
+                                Sofrware Ingineer at <%=user.work_place%>
+                            </div>
+                        </div>
+                        <div class="midd_top_text">
+                            <div class="text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Maecenas risus erat, condimentum non convallis vel, auctor vel ipsum.
+                                    Maecenas orci tortor, semper quis diam sed, sagittis
+                                    aliquet dui.</p>
+                            </div>
+                        </div>
+                        <div class="btn">
+                        <a  href="#"><button> HIRE ME <img src="icon/resume_figma-Home page- Light mode/Vector.png" alt=""></button></a>
+                        </div>
+                        <div class="midd_top_img">
+                            <img src="images/ihakosimov.png" width="326px" height="446px" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="midd_bot">
+                    <div class="midd_bot_div">
+                        <div class="midd_bot_main">
+                            My Services
+                        </div>
+                        <div class="midd_bot_text">
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum
+                        </div>
+                        <div class="midd_bot_row">
+                            <div class="col_1">
+                                <div class="col_img_1">
+                                    <img src="icon/resume_figma-Home page- Light mode/Icons_coding-1.svg" alt="">
+                                </div>
+                                <div class="col_title_1">
+                                    Web Development
+                                </div>
+                                <div class="col_disc_1">
+                                    Blog, E-commerce
+                                </div>
+                            </div>
+                        </div>
+                        <div class="midd_bot_row">
+                            <div class="col_2">
+                                <div class="col_img_2">
+                                    <img src="icon/resume_figma-Home page- Light mode/Icons_illustration.svg" alt="">
+                                </div>
+                                <div class="col_title_2">
+                                    UI/UX Design
+                                </div>
+                                <div class="col_disc_2">
+                                    Mobile App, Website Design
+                                </div>
+                            </div>
+                        </div>
+                        <div class="midd_bot_row">
+                            <div class="col_3">
+                                <div class="col_img_3">
+                                    <img src="icon/resume_figma-Home page- Light mode/Icons_Microphone.svg" alt="">
+                                </div>
+                                <div class="col_title_3">
+                                    Web Development
+                                </div>
+                                <div class="col_disc_3">
+                                    Blog, E-commerce
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="midd_bot_div">
+                        <div class="midd_bot_main">
+                            My Services
+                        </div>
+                        <div class="midd_bot_text">
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum
+                        </div>
+                        <div class="midd_bot_row">
+                            <div class="col_4">
+                                <div class="col_img_4">
+                                    <img src="icon/resume_figma-Home page- Light mode/Icons_game-development.svg" alt="">
+                                </div>
+                                <div class="col_title_4">
+                                    Game Design
+                                </div>
+                                <div class="col_disc_4">
+                                    Character Design, Props & Object
+                                </div>
+                            </div>
+                        </div>
+                        <div class="midd_bot_row">
+                            <div class="col_5">
+                                <div class="col_img_5">
+                                    <img src="icon/resume_figma-Home page- Light mode/Icons_Photographer.svg" alt="">
+                                </div>
+                                <div class="col_title_5">
+                                    Photography 
+                                </div>
+                                <div class="col_disc_5">
+                                    Portrait, Product Photography
+                                </div>
+                            </div>
+                        </div>
+                        <div class="midd_bot_row">
+                            <div class="col_6">
+                                <div class="col_add">
+                                    <p>Advertising </p>
+                                </div>
+                                <div class="col_title_6">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi.
+                                </div>
+                                <div class="col_order">
+                                    <a href="#"><p>ORDER NOW ></p></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right_frame">
+                <div class="right_menu">
+                    <div class="mode">
+                        <a href="#"><img src="icon/resume_figma-Home page- Light mode/Contrast.png" alt=""></a>
+                    </div>
+                    <div class="menu">
+                        <a href="#"><img src="icon/resume_figma-Home page- Light mode/Service.png" alt=""></a>
+                        <a href="#"><img src="icon/resume_figma-Home page- Light mode/Cv.png" alt=""></a>
+                        <a href="#"><img src="icon/resume_figma-Home page- Light mode/Portfolio.png" alt=""></a>
+                        <a href="#"><img src="icon/resume_figma-Home page- Light mode/Blog.png" alt=""></a>
+                        <a href="#"><img src="icon/resume_figma-Home page- Light mode/Contact.png" alt=""></a>
+                        <a href="#"><img src="icon/resume_figma-Home page- Light mode/Service.png" alt=""></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

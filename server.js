@@ -9,7 +9,7 @@ fs.readFile("database/user.json", "utf8", (err, data) =>{
     if(err) {
         console.log("ERROR", err);
     } else {
-        user = JSON.parse(data);
+        user = JSON.parse(data)
     }
 });
 
@@ -32,8 +32,8 @@ app.set("view engine", "ejs");
 
 //4 Routing code
 app.post("/create-item", (req, res) => {
-    // console.log(req.body);
-    // res.json({test: "success"});
+    console.log(req.body);
+    res.json({test: "success"});
 });
 app.get('/', function(req, res){
     res.render("harid.ejs");
@@ -46,3 +46,4 @@ let PORT = 3000;
 server.listen(PORT, function(){
     console.log(`The server is qrunning succesfully on port: ${PORT} `);
 });
+
