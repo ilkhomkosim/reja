@@ -700,7 +700,7 @@
     font-weight: 500;
     line-height: 123.6%;
     letter-spacing: 0%;
-    text-align: left;
+    text-align: center;
     text-transform: capitalize;
     left: 76px;
     top: 122px;
@@ -749,14 +749,15 @@
     font-family: Inter;
     font-size: 18px;
     font-weight: 500;
+    display: flex;
     line-height: 123.6%;
     letter-spacing: 0%;
-    text-align: left;
+    text-align: center;
     text-transform: capitalize;
     top: 122px;
-    right: 98px;
+    right: 96px;
     bottom: 81px;
-    left: 97px;
+    left: 98px;
 }
 
 .midd_bot_row .col_5 .col_disc_5{
@@ -843,6 +844,7 @@
     background-color: #ffb400;
     transition: 0.3s;
     color: #ffffff;
+    border-radius: 25px;
 }
 
 .right_frame .right_menu{
