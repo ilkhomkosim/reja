@@ -47,6 +47,25 @@ document.addEventListener("click", function(e) {
     }
     // edit oper
     if (e.target.classList.contains("edit-me")) {
-        alert("siz edit buttonni bosdingiz")
+        let userInput = prompt(
+            "O'zgartirish kiriting",
+            e.target.parentElement.parentElement.querySelector(".item-text").innerHTML
+        );
+        if (userInput) {
+            axios
+            .post("/edit-item", {
+                id: e.target.getAttribute("data-id"),
+                new_input: userInput,
+            })
+            .then((response) => {
+                console.log(response.data);
+                e.target.parentElement.parentElement.querySelector(".item-text").innerHTML = userInput;
+
+            })
+            .catch(err =>{
+                console.log("iltimos qaytadan harakat qiling");
+            })
+        }
+        
     }
 });
