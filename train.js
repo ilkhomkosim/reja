@@ -9,35 +9,44 @@ MASALAN: const shop = new Shop(4, 5, 2); shop.qoldiq() return hozir 20:40da
 
 */
 
-const moment = require('moment');
+// const moment = require('moment');
 
-const now = moment();
+// const now = moment();
 
-console.log("Current Date and Time:", now.format("YYYY-MM-DD HH:mm:ss"));
-class Shop {
-    //state
-
-
-    constructor(non, cola, lagmon) {
-        this.non = non;
-        this.cola = cola;
-        this.lagmon = lagmon;
-    }
-
-    // methods
-    qoldiq() {
-        console.log(now.format(" HH:mm"), "da");
-        console.log( ` ${this.non} ta non , ${this.lagmon} ta lag'mon va ${this.cola} ta cola mavjud!`);
-    }
-    sotish() {
-        console.log(`${this.non} ta , ${this.lagmon} ta , ${this.cola} ta sotildi`);
-    }
-
-    qabul() {
-        console.log(`${this.non} ta , ${this.lagmon} ta , ${this.cola} ta qabul qilindi`);
-    }
-}
+// console.log("Current Date and Time:", now.format("YYYY-MM-DD HH:mm:ss"));
+// class Shop {
+//     //state
 
 
-const shop = new Shop(5, 4, 8);
-shop.qoldiq();
+//     constructor(non, cola, lagmon) {
+//         this.non = non;
+//         this.cola = cola;
+//         this.lagmon = lagmon;
+//     }
+
+//     // methods
+//     qoldiq() {
+//         console.log(now.format(" HH:mm"), "da");
+//         console.log( ` ${this.non} ta non , ${this.lagmon} ta lag'mon va ${this.cola} ta cola mavjud!`);
+//     }
+//     sotish() {
+//         console.log(`${this.non} ta , ${this.lagmon} ta , ${this.cola} ta sotildi`);
+//     }
+
+//     qabul() {
+//         console.log(`${this.non} ta , ${this.lagmon} ta , ${this.cola} ta qabul qilindi`);
+//     }
+// }
+
+
+// const shop = new Shop(5, 4, 8);
+// shop.qoldiq();
+
+function checkContent(string1, string2) {
+    const sortedString1 = string1.split('').sort().join('');
+    const sortedString2 = string2.split('').sort().join('');
+
+    return sortedString1 === sortedString2;
+  }
+
+  console.log(checkContent("dulemo", "module"));

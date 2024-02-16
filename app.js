@@ -120,10 +120,16 @@ app.post("/edit-item", (req, res) => {
         {$set:{reja:data.new_input}}, 
     function(err, data){
         res.json({state: "success"});
-    })
-    res.end("done");
+    });
 })
 
+app.post("/delete-all", (req, res) => {
+    if(req.body.delete_all) {
+        db.collection("plans").deleteMany(function() {
+            res.json({state: "hamma rejalar o'chirildi"});
+        });
+    }
+});
 
 app.get("/", function (req, res) {
     console.log("user entered /");
