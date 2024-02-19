@@ -42,11 +42,19 @@ MASALAN: const shop = new Shop(4, 5, 2); shop.qoldiq() return hozir 20:40da
 // const shop = new Shop(5, 4, 8);
 // shop.qoldiq();
 
-function checkContent(string1, string2) {
-    const sortedString1 = string1.split('').sort().join('');
-    const sortedString2 = string2.split('').sort().join('');
+// function checkContent(string1, string2) {
+//     const sortedString1 = string1.split('').sort().join('');
+//     const sortedString2 = string2.split('').sort().join('');
 
-    return sortedString1 === sortedString2;
-  }
+//     return sortedString1 === sortedString2;
+//   }
 
-  console.log(checkContent("dulemo", "module"));
+//   console.log(checkContent("dulemo", "module"));
+function reverse(string) {
+  // Teskari qilish uchun split(), reverse(), va join() metodlardan foydalanamiz.
+  return string.split('').reverse().join('');
+}
+
+
+var reverseString = reverse("hello");
+console.log(reverseString); 
