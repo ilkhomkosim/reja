@@ -50,11 +50,34 @@ MASALAN: const shop = new Shop(4, 5, 2); shop.qoldiq() return hozir 20:40da
 //   }
 
 //   console.log(checkContent("dulemo", "module"));
-function reverse(string) {
-  // Teskari qilish uchun split(), reverse(), va join() metodlardan foydalanamiz.
-  return string.split('').reverse().join('');
+// function reverse(string) {
+//   // Teskari qilish uchun split(), reverse(), va join() metodlardan foydalanamiz.
+//   return string.split('').reverse().join('');
+// }
+
+
+// var reverseString = reverse("hello");
+// console.log(reverseString); 
+
+
+// F-TASK
+
+function find(String) {
+  const lowercaseString = String.toLowerCase();
+
+  const letterCounts = {};
+
+  for (const letter of lowercaseString) {
+    if (letter.match(/[a-z]/)) {
+      letterCounts[letter] = (letterCounts[letter] || 0) + 1;
+      if (letterCounts[letter] > 1) {
+        return true;
+      }
+    }
+  }
+
+  return false;
 }
 
-
-var reverseString = reverse("hello");
-console.log(reverseString); 
+const Doubles = find("hello");
+console.log(Doubles); // true
